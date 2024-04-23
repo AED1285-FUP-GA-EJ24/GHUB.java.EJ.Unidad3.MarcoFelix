@@ -1,61 +1,58 @@
+package romano;
 // Proposito: Convertir un número arábiga del 1 al 10
 // en Romano 1-I 2-II 3-III 4-IV 5-V
 // 6-VI 7-VII 8-VIII 9-IX 10-X
-// Autor:Marco Felix
+// Autor:Lourdes Armenta
 // Fecha:16/abr/24
-import java.lang.invoke.SwitchPoint;
 import java.util.Scanner;
 public class Romano {
     public void romano(){
-        //Definir objento scanner
-        Scanner teclado = new Scanner(System.in);
-        //Definir variable de salida
+        // Definimos objeto Scanner
+        Scanner entrada = new Scanner(System.in);
+        // Definimos variable de salida
         String roma;
-        //Definir variable de entrada
-        Short ara;
-        System.out.println("Proporciona número arábigo(1-10):");
-        ara = teclado.nextShort();
+        // Definimos variable de entrada
+        short ara;
+        System.out.println("Proporciona número arábigo (1-10):");
+        ara = entrada.nextShort();
         switch (ara) {
             case 1:
                 roma ="I";
                 break;
             case 2:
-            roma = "II";
+                roma = "II";
                 break;
             case 3:
-                roma ="III";
+                roma = "III";
                 break;
             case 4:
-                roma ="IV";
+                roma = "IV";
                 break;
             case 5:
-                roma ="V";
+                roma = "V";
                 break;
             case 6:
-                roma ="VI";
+                roma = "VI";
                 break;
             case 7:
-                roma ="VII";
+                roma = "VII";
                 break;
             case 8:
-                roma ="VIII";
+                roma = "VIII";
                 break;
             case 9:
-                roma ="IX";
+                roma = "IX";
                 break;
             case 10:
-                roma ="X";
-                break;    
+                roma = "X";
+                break;
             default:
-                roma ="Valor invalido";
+                roma ="Valor inválido";
                 break;
         }
         System.out.println("Romano = "+roma);
-        Scanner entrada;
-        entrada.close();    
     }
 }
 
 
     
-}
