@@ -10,8 +10,16 @@ import menorde3.Menorde3;
 import peaje.Peaje;
 import tipoTriangulo.Triangulo;
 import romano.Romano;
+import sumaPares.SumaPares;
 import vocal.Vocal;
 import calificaciones.Calificacion;
+import demoFor.DemoFor;
+import demoIfAnidado.DemoIfAnidado;
+import demoOpTernario.DemoOpTernario;
+import demoWhile.DemoWhile;
+import multiplicar.Multiplicar;
+import calorias.Calorias;
+import promedio2.Promedio;
 public class Principal {
     
     public static void main(String[] args) {
@@ -30,7 +38,15 @@ public class Principal {
         System.out.println("* 8) Menor, Igual o Mayor de 3        ");
         System.out.println("* 9) Determinar Tipo de Calificación  ");
         System.out.println("*10) Seleccionar Tipo Tarifa          ");
-        System.out.println(" 11) Determinación de Bono             ");
+        System.out.println("*11) Determinación de Bono            ");
+        System.out.println("*12) Formas de If anidado             ");
+        System.out.println("*13) Operador Ternario ?:             ");     
+        System.out.println("*14) Demo For                         ");
+        System.out.println("*15) Suma los M primeros búmero pares ");
+        System.out.println("*16) Tabla Mutiplicar con argumentos  ");
+        System.out.println("*17) Demo ciclo while                 ");
+        System.out.println(" 18) Calculo de Calorias              ");
+        System.out.println(" 19) Promedio Calificaciones           ");
         System.out.println("**************************************");
         System.out.print("Seleccion Opcion:");
         opcion = entrada.nextInt();
@@ -79,7 +95,41 @@ public class Principal {
              Bono objBono = new Bono();
              objBono.bono();
              break;
-             
+            case 12:
+              DemoIfAnidado objDemoIfAnidado = new DemoIfAnidado();
+              objDemoIfAnidado.demoIfAnidado();
+              break;
+            case 13:
+              DemoOpTernario objOpTer = new DemoOpTernario();
+              objOpTer.demoOpTernario();
+              break;
+            case 14:
+             DemoFor objDemoFor = new DemoFor();
+             objDemoFor.demofor();
+             break;
+            case 15:
+             SumaPares objSumaPares = new SumaPares();
+             objSumaPares.sumaPares();
+             break;
+            case 16:
+             Multiplicar objMult = new Multiplicar();
+             System.out.println("Proporciona número para generar tabla:");
+             int n = entrada.nextInt();
+             objMult.multiplicar(n);
+             break;
+            case 17:
+              DemoWhile objdw = new DemoWhile();
+              objdw.demoWhile();
+              break;
+            case 18:
+              Calorias objCal= new Calorias();
+              objCal.calorias();
+              break;
+            case 19:
+              Promedio objProm = new Promedio();
+              objProm.promedio();
+              break;
+              
             default:
               System.out.println("Opción inválida");
         }
