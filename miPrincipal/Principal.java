@@ -5,6 +5,7 @@ import bono.Bono;
 import difEdades.DifEdades;
 import incentivo.Incentivo;
 import ine.Ine;
+import leerX.LeerX;
 import mayor.Mayor3;
 import menorde3.Menorde3;
 import peaje.Peaje;
@@ -49,6 +50,7 @@ public class Principal {
         System.out.println(" 18) Calculo de Calorias              ");
         System.out.println(" 19) Promedio Calificaciones          ");
         System.out.println("*20) Calcular ecuacion                ");
+        System.out.println("*21) Leer valores de x y de y             ");
         System.out.println("**************************************");
         System.out.print("Seleccion Opcion:");
         opcion = entrada.nextInt();
@@ -135,6 +137,10 @@ public class Principal {
               Ecuacion objEcu = new Ecuacion();
               objEcu.ecuacion();
               break;
+            case 21:
+            LeerX objLeerX = new LeerX();
+            objLeerX.leerX();
+            break;
               
             default:
               System.out.println("Opción inválida");
