@@ -1,16 +1,16 @@
 package leerX;
-
+/*
+ * Proposito: Imprimir el valor de y
+ *     mientra que x sea mayor que cero
+ *     donde x es leída por el teclado
+ */
 import java.util.Scanner;
 
-/*
- * Proposito: Importar el valor de y
- *      
- */
 public class LeerX {
     public void leerX(){
         //Definir objeto
         Scanner teclado = new Scanner(System.in);
-        //definir variable de salida
+        //definir variavble de salida
         final int Y=99;
         //definir variable de entrada
         int x;
@@ -23,5 +23,8 @@ public class LeerX {
 
         }
         teclado.close();
+
+
     }
+    
 }
